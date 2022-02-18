@@ -60,6 +60,8 @@ do
         # use TCVERSION and ARCH to get real exit codes.
         echo "$ make TCVERSION=${GH_ARCH##*-} ARCH=${GH_ARCH%%-*} -C ./spk/${package}" >>build.log
         make TCVERSION=${GH_ARCH##*-} ARCH=${GH_ARCH%%-*} -C ./spk/${package} ${MAKE_ARGS} |& tee >(tail -15 >>build.log)
+#        echo "$ make arch-${GH_ARCH%%-*}-${GH_ARCH##*-} -C ./spk/${package}" >>build.log
+#        make arch-${GH_ARCH%%-*}-${GH_ARCH##*-} -C ./spk/${package} ${MAKE_ARGS} |& tee >(tail -15 >>build.log)
     else
         if [ "${GH_ARCH}" = "noarch" ]; then
             TCVERSION=
@@ -86,3 +88,4 @@ do
 
     echo "::endgroup::"
 done
+

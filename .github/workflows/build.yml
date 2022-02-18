@@ -39,6 +39,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
+            submodules: recursive
+            token: ${{ secrets.ACCESS_TOKEN }}
             fetch-depth: 0
             persist-credentials: false
 
@@ -71,8 +73,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-            fetch-depth: 0
-            persist-credentials: false
+          submodules: recursive
+          token: ${{ secrets.ACCESS_TOKEN }}
+          fetch-depth: 0
+          persist-credentials: false
 
       - name: Cache downloaded files
         uses: actions/cache@v2
@@ -95,12 +99,15 @@ jobs:
       matrix:
         # x64=x86_64, evansport=i686, aarch64=armv8, armv7, hi3535=armv7l, 88f6281=armv5, qoriq=ppc
         # https://github.com/SynoCommunity/spksrc/wiki/Synology-and-SynoCommunity-Package-Architectures
-        arch: [noarch, noarch-6.0, noarch-7.0, x64-6.1, x64-7.0, evansport-6.1, evansport-7.0, aarch64-6.1, aarch64-7.0, armv7-6.1, armv7-7.0, hi3535-6.1, 88f6281-6.1, qoriq-6.1, comcerto2k-7.0]
-
+        # arch: [noarch, noarch-6.2, noarch-7.0, x64-6.2, x64-7.0, evansport-6.2, evansport-7.0, aarch64-6.2, aarch64-7.0, armv7-6.2, armv7-7.0, hi3535-6.2, 88f6281-6.2, qoriq-6.2, comcerto2k-7.0]
+##        arch: [armada37xx-6.2.3, armada37xx-7.0, cedarview-6.2.3, cedarview-7.0, x64-6.2.3, x64-7.0]
+        arch: [88f6281-6.2.3 ,alpine-6.2.3 ,apollolake-6.2.3 ,armada370-6.2.3 ,armada375-6.2.3 ,armada37xx-6.2.3 ,armada38x-6.2.3 ,armadaxp-6.2.3 ,avoton-6.2.3 ,braswell-6.2.3 ,broadwell-6.2.3 ,broadwellnk-6.2.3 ,bromolow-6.2.3 ,cedarview-6.2.3 ,comcerto2k-6.2.3 ,denverton-6.2.3 ,dockerx64-6.2.3 ,evansport-6.2.3 ,geminilake-6.2.3 ,grantley-6.2.3 ,hi3535-6.2.3 ,kvmx64-6.2.3 ,monaco-6.2.3 ,purley-6.2.3 ,qoriq-6.2.3 ,rtd1296-6.2.3 ,v1000-6.2.3 ,x64-6.2.3 ,x86-6.2.3 ,alpine-7.0 ,apollolake-7.0 ,armada370-7.0 ,armada375-7.0 ,armada37xx-7.0 ,armada38x-7.0 ,armadaxp-7.0 ,avoton-7.0 ,braswell-7.0 ,broadwellnk-7.0 ,bromolow-7.0 ,cedarview-7.0 ,comcerto2k-7.0 ,denverton-7.0 ,dockerx64-7.0 ,evansport-7.0 ,geminilake-7.0 ,grantley-7.0 ,hi3535-7.0 ,kvmx64-7.0 ,monaco-7.0 ,purley-7.0 ,qoriq-7.0 ,rtd1296-7.0 ,v1000-7.0]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
+            submodules: recursive
+            token: ${{ secrets.ACCESS_TOKEN }}
             fetch-depth: 0
             persist-credentials: false
 
@@ -187,4 +194,5 @@ jobs:
         with:
           files: 'packages/*.spk'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+
