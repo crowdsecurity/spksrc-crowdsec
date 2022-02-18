@@ -1,0 +1,16 @@
+{
+  "usr-local-linker": {
+    "bin": [
+      "usr/sbin/crowdsec-firewall-bouncer",
+      "sbin/ipset",
+      "sbin/ipset-translate"
+    ],
+    "lib": [
+      "lib/libmnl.so",
+      "lib:lib/libmnl.so.0",
+      "lib/libmnl.so.0.2.0",
+      "lib/modules"
+    ]
+  }
+}
+

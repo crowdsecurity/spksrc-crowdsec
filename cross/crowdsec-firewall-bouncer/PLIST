@@ -1,0 +1,2 @@
+rsc:etc/crowdsec/bouncers/crowdsec-firewall-bouncer.yaml
+bin:usr/sbin/crowdsec-firewall-bouncer

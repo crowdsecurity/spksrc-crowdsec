@@ -1,0 +1,16 @@
+#
+# Synology acquis
+#
+
+filenames:
+ - /var/log/nginx/*.log
+labels:
+  type: nginx 
+---
+filenames:
+ - /var/log/auth.log
+ - /var/log/syslog
+ - /var/log/*.log
+labels:
+  type: syslog
+

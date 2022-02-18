@@ -1,0 +1,8 @@
+{
+  "defaults": {
+    "run-as": "root"
+  },
+  "join-groupname": "system",
+  "username": "sc-crowdsec",
+  "groupname": "sc-crowdsec"
+}

@@ -1,0 +1,17 @@
+{
+  "usr-local-linker": {
+    "bin": [
+      "usr/sbin/crowdsec",
+      "usr/sbin/cscli"
+    ],
+    "etc": [
+      "etc/crowdsec"
+    ],
+    "share": [
+      "etc/data"
+    ],
+    "lib": [
+      "usr/lib/crowdsec"
+    ]
+  }
+}
