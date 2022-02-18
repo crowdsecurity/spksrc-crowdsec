@@ -197,7 +197,7 @@ init_config() {
 
 fix_runas_root ()
 {
-##    sed -i "s/package/root/" "/var/packages/${PACKAGE}/conf/privilege"
+	sed -i "s/package/root/" "/var/packages/${PACKAGE}/conf/privilege"
 }
 
 service_postinst ()
