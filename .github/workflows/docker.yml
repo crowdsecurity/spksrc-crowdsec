@@ -60,8 +60,8 @@ jobs:
         #     synocommunity/spksrc:latest
         #     ghcr.io/synocommunity/spksrc:latest
         # tags: ghcr.io/cybermind-fr/spksrc-crowdsec-private:latest
-            tags:
-              crowdsecurity/spksrc-crowdsec:latest
-              ghcr.io/crowdsecurity/spksrc-crowdsec:latest
+          tags:
+            crowdsecurity/spksrc-crowdsec:latest
+            ghcr.io/crowdsecurity/spksrc-crowdsec:latest
           submodules: recursive
           token: ${{ secrets.GITHUB_TOKEN }}
