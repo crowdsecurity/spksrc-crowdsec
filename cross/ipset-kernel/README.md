@@ -1,4 +1,4 @@
-# synology-crowdsec-firewall-bouncer-cross
+# synology-ipset-kernel-cross
 #
 # SPDX-License-Identifier: MIT
 #
@@ -6,7 +6,7 @@
 # Copyright (C) 2021-2022 CrowdSec <crowdsec@crowdsec.net>
 #
 
-Synology DSM7 package for CrowdSec-Firewall-Bouncer (cross)
+ipset --- administration tool for IP sets.
 
 ...
 

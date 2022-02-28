@@ -1,6 +1,9 @@
+# synology-crowdsec-cross
+#
 # SPDX-License-Identifier: MIT
 #
 # Copyright (C) 2021-2022 Gerald Kerma <gandalf@gk2.net>
+# Copyright (C) 2021-2022 CrowdSec <crowdsec@crowdsec.net>
 #
 
 PKG_NAME = crowdsec
