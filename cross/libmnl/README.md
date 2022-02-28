@@ -6,7 +6,7 @@
 # Copyright (C) 2021-2022 CrowdSec <crowdsec@crowdsec.net>
 #
 
-libmnl is a minimalistic user-space library oriented to Netlink developers.
+Synology DSM7 package for libmnl (cross)
 
 ...
 

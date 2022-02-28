@@ -6,7 +6,7 @@
 # Copyright (C) 2021-2022 CrowdSec <crowdsec@crowdsec.net>
 #
 
-ipset --- administration tool for IP sets.
+Synology DSM7 package for ipset (cross)
 
 ...
 
