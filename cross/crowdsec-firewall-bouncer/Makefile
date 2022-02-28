@@ -5,7 +5,6 @@
 # Copyright (C) 2021-2022 Gerald Kerma <gandalf@gk2.net>
 # Copyright (C) 2021-2022 CrowdSec <crowdsec@crowdsec.net>
 #
-#
 
 SRCNAME = cs-firewall-bouncer
 PKG_NAME = crowdsec-firewall-bouncer
@@ -29,7 +28,7 @@ DISTRIBUTOR_URL = "https://www.crowdsec.net"
 MAINTAINER = "CyberMind"
 MAINTAINER_URL = "https://cybermind.fr"
 
-COMMENT  = crowdsec-firewall-bouncer will fetch new and old decisions from a CrowdSec API to add them in a blocklist used by supported firewalls.
+COMMENT = crowdsec-firewall-bouncer will fetch new and old decisions from a CrowdSec API to add them in a blocklist used by supported firewalls.
 
 COMPILE_TARGET = crowdsec-firewall-bouncer_compile
 INSTALL_TARGET = crowdsec-firewall-bouncer_install
