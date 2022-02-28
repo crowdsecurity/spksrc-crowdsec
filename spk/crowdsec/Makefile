@@ -12,7 +12,7 @@ SPK_REV = 4
 SPK_ICON = src/$(SPK_NAME).png
 
 DISPLAY_NAME = CrowdSec
-DESCRIPTION  = "CrowdSec - the open-source and participative IPS able to analyze visitor behavior & provide an adapted response to all kinds of attacks. It also leverages the crowd power to generate a global CTI database to protect the user network."
+DESCRIPTION = CrowdSec - the open-source and participative IPS able to analyze visitor behavior & provide an adapted response to all kinds of attacks. It also leverages the crowd power to generate a global CTI database to protect the user network.
 CHANGELOG = "1. Initial package for DSM7\n2. add ipset tool\n2. DSM6 compatibility mode added\n3. First relase\n4. Fix Copyright"
 
 THIRDPARTY = "yes"

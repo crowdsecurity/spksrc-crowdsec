@@ -12,7 +12,7 @@ SPK_REV = 5
 SPK_ICON = src/$(SPK_NAME).png
 
 DISPLAY_NAME = CrowdSec-Firewall-Bouncer
-DESCRIPTION = "Crowdsec-Firewall-Bouncer will fetch new and old decisions from a CrowdSec API to add them in a blocklist used by supported firewalls.""
+DESCRIPTION = Crowdsec-Firewall-Bouncer will fetch new and old decisions from a CrowdSec API to add them in a blocklist used by supported firewalls.
 CHANGELOG = "1. Initial package for DSM7\n2. add ipset tool\n3. add ipset kernel modules\n3. add ipset tool\n3. DSM6 compatibility mode added\n4. First relase\n5. Fix Copyright"
 
 THIRDPARTY = "yes"
