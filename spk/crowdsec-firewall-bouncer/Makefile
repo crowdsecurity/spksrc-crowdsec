@@ -6,9 +6,26 @@
 
 SPK_NAME = crowdsec-firewall-bouncer
 SPK_VERS = 0.0.22
-SPK_REV = 4
+SPK_REV = 5
 SPK_ICON = src/$(SPK_NAME).png
-CHANGELOG = "1. Initial package for DSM7\n2. add ipset tool\n3. add ipset kernel modules\n3. add ipset tool\n3. DSM6 compatibility mode added\n4. First relase"
+
+DISPLAY_NAME = CrowdSec-Firewall-Bouncer
+DESCRIPTION = "Crowdsec-Firewall-Bouncer will fetch new and old decisions from a CrowdSec API to add them in a blocklist used by supported firewalls.""
+CHANGELOG = "1. Initial package for DSM7\n2. add ipset tool\n3. add ipset kernel modules\n3. add ipset tool\n3. DSM6 compatibility mode added\n4. First relase\n5. Fix Copyright"
+
+THIRDPARTY = "yes"
+HOMEPAGE = "https://www.crowdsec.net"
+LICENSE = "MIT"
+
+DISTRIBUTOR = "CrowdSec"
+DISTRIBUTOR_URL = "https://www.crowdsec.net"
+
+MAINTAINER = "CyberMind"
+MAINTAINER_URL = "https://cybermind.fr"
+
+MAINTAINER = "Gerald Kerma <gandalf@gk2.net>"
+RELOAD_UI = yes
+STARTABLE = yes
 
 DEPENDS  = cross/$(SPK_NAME)
 ##DEPENDS += cross/ipset
@@ -16,15 +33,6 @@ DEPENDS += cross/ipset-kernel
 
 ##SPK_DEPENDS = "crowdsec"
 OPTIONAL_DEPENDS = "crowdsec"
-
-MAINTAINER = "Gerald Kerma <gandalf@gk2.net>"
-DESCRIPTION = crowdsec-firewall-bouncer will fetch new and old decisions from a CrowdSec API to add them in a blocklist used by supported firewalls.
-RELOAD_UI = yes
-STARTABLE = yes
-
-DISPLAY_NAME = CrowdSec-Firewall-Bouncer
-HOMEPAGE = https://www.crowdsec.net
-LICENSE = MIT
 
 include ../../mk/spksrc.common.mk
 
