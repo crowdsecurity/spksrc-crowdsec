@@ -28,8 +28,7 @@ DISTRIBUTOR_URL = "https://www.crowdsec.net"
 MAINTAINER = "CyberMind"
 MAINTAINER_URL = "https://cybermind.fr"
 
-COMMENT  =  CrowdSec - the open-source and participative IPS able to analyze visitor behavior & provide an adapted response to all kinds of attacks. It also leverages the crowd power to generate a global CTI database to protect the user network. 
-LICENSE  = MIT
+COMMENT = CrowdSec - the open-source and participative IPS able to analyze visitor behavior & provide an adapted response to all kinds of attacks. It also leverages the crowd power to generate a global CTI database to protect the user network.
 
 COMPILE_TARGET = crowdsec_compile
 INSTALL_TARGET = crowdsec_install
