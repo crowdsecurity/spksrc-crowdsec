@@ -1,6 +1,9 @@
-# SPDX-License-Identifier: MIT
+# synology-libmnl-cross
+#
+# SPDX-License-Identifier: LGPLv2.1+
 #
 # Copyright (C) 2021-2022 Gerald Kerma <gandalf@gk2.net>
+# Copyright (C) 2021-2022 CrowdSec <crowdsec@crowdsec.net>
 #
 
 PKG_NAME = libmnl
@@ -10,7 +13,8 @@ PKG_DIST_NAME = $(PKG_NAME)-$(PKG_VERS).$(PKG_EXT)
 PKG_DIST_SITE = https://www.netfilter.org/projects/libmnl/files
 PKG_DIR = $(PKG_NAME)-$(PKG_VERS)
 
-MAINTAINER = Gerald Kerma gandalf@gk2.net
+MAINTAINER = "CyberMind"
+MAINTAINER_URL = "https://cybermind.fr"
 HOMEPAGE = https://www.netfilter.org/projects/libmnl/
 COMMENT  = libmnl is a minimalistic user-space library oriented to Netlink developers.
 LICENSE  = LGPLv2.1+

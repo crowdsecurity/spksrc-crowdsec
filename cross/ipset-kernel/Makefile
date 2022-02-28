@@ -1,6 +1,9 @@
-# SPDX-License-Identifier: MIT
+# synology-ipset-kernel-cross
+#
+# SPDX-License-Identifier: LGPLv2.1+
 #
 # Copyright (C) 2021-2022 Gerald Kerma <gandalf@gk2.net>
+# Copyright (C) 2021-2022 CrowdSec <crowdsec@crowdsec.net>
 #
 
 SRCNAME = ipset
@@ -16,7 +19,8 @@ PKG_DIR =  $(SRCNAME)-$(PKG_VERS)
 
 DEPENDS = cross/libmnl 
 
-MAINTAINER = Gerald Kerma gandalf@gk2.net
+MAINTAINER = "CyberMind"
+MAINTAINER_URL = "https://cybermind.fr"
 HOMEPAGE = https:/www.netfilter.org/projects/ipset/index.html
 COMMENT  = ipset --- administration tool for IP sets.
 LICENSE  = MIT
