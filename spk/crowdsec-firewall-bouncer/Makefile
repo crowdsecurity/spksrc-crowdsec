@@ -25,7 +25,6 @@ DISTRIBUTOR_URL = "https://www.crowdsec.net"
 MAINTAINER = "CyberMind"
 MAINTAINER_URL = "https://cybermind.fr"
 
-MAINTAINER = "Gerald Kerma <gandalf@gk2.net>"
 RELOAD_UI = yes
 STARTABLE = yes
 

@@ -20,10 +20,16 @@ PKG_DIR =  $(PKG_NAME)-$(PKG_VERS)
 
 BUILD_DEPENDS = native/go
 
-MAINTAINER = Gerald Kerma gandalf@gk2.net
-HOMEPAGE = https://crowdsec.net
+HOMEPAGE = "https://www.crowdsec.net"
+LICENSE = "MIT"
+
+DISTRIBUTOR = "CrowdSec"
+DISTRIBUTOR_URL = "https://www.crowdsec.net"
+
+MAINTAINER = "CyberMind"
+MAINTAINER_URL = "https://cybermind.fr"
+
 COMMENT  = crowdsec-firewall-bouncer will fetch new and old decisions from a CrowdSec API to add them in a blocklist used by supported firewalls.
-LICENSE  = MIT
 
 COMPILE_TARGET = crowdsec-firewall-bouncer_compile
 INSTALL_TARGET = crowdsec-firewall-bouncer_install

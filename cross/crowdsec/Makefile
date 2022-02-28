@@ -19,8 +19,15 @@ PATCHES_LEVEL = 1
 
 BUILD_DEPENDS = native/go
 
-MAINTAINER = Gerald Kerma gandalf@gk2.net
-HOMEPAGE = https://crowdsec.net
+HOMEPAGE = "https://www.crowdsec.net"
+LICENSE = "MIT"
+
+DISTRIBUTOR = "CrowdSec"
+DISTRIBUTOR_URL = "https://www.crowdsec.net"
+
+MAINTAINER = "CyberMind"
+MAINTAINER_URL = "https://cybermind.fr"
+
 COMMENT  =  CrowdSec - the open-source and participative IPS able to analyze visitor behavior & provide an adapted response to all kinds of attacks. It also leverages the crowd power to generate a global CTI database to protect the user network. 
 LICENSE  = MIT
 
