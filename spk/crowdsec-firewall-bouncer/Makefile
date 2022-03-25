@@ -38,17 +38,17 @@ OPTIONAL_DEPENDS = "crowdsec"
 include ../../mk/spksrc.common.mk
 
 ifeq ($(call version_ge, ${TCVERSION}, 7.0),1)
-    CONF_DIR = src/conf_7
-    SPK_GROUP = sc-crowdsec
-    SPK_USER = crowdsec
-    SYSTEM_GROUP = system
-    SERVICE_USER = auto
+	CONF_DIR = src/conf_7
+	SPK_GROUP = sc-crowdsec
+	SPK_USER = crowdsec
+	SYSTEM_GROUP = system
+	SERVICE_USER = auto
 else ifeq ($(call version_ge, ${TCVERSION}, 6.0),1)
-    CONF_DIR = src/conf_6
-    SPK_GROUP = sc-crowdsec
-    SPK_USER = crowdsec
-    SYSTEM_GROUP = system
-    SERVICE_USER = root
+	CONF_DIR = src/conf_6
+	SPK_GROUP = sc-crowdsec
+	SPK_USER = crowdsec
+	SYSTEM_GROUP = system
+	SERVICE_USER = root
 endif
 
 SERVICE_SETUP = src/service-setup.sh
